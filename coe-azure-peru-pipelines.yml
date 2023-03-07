@@ -45,7 +45,7 @@ stages:
             inputs:
               knownHostsEntry: "github.com ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAq2A7hRGmdnm9tUDbO9IDSwBK6TbQa+PXYPCPy6rbTrTtw7PHkccKrpp0yVhp5HdEIcKr6pLlVDBfOLX9QUsyCOV0wzfjIJNlGEYsdlLJizHhbn2mUjvSAHQqZETYP81eFzLQNnPHt4EVVUh7VfDESU84KezmD5QlWpXLmvU31/yMf+Se8xhHTvKSCZIFImWwoG6mbUoWf9nzpIoaSjB+weqqUUmpaaasXVal72J+UX2B+2RPW3RcT0eOzQgqlJL3RKrTJvdsjE3JEAvGq3lGHSZXy28G3skua2SmVi/w4yCE6gbODqnTWlg7+wC604ydGXA8VJiS5ap43JXiUFFAaQ=="
               sshPublicKey: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCRfYWbhVQbC0k0Nl0aDY7y5gQQXCF9sLHfDFOuWijkeLTuBWLWlc1Te0mVq2+zQfdD6B6YS8b2Lnn7U4lCAupv2BxNvmaLEPjjgDTeNPhi+rlRC7Sm506zAoIDnrEuRnJJzpSAZEdDcPxU6VRJcSQDfty5IAEbQTZiWrjlJaRGBb+tY3kUIMtOnlDCermK1JOdwcxNp/j9WCO6q2+EuiVX/wlvDCg8SXDzac53sMoLEvsXtISe6epVtupcpMfs9H8Dy81UMSWxGZzNHpakY6eqe+JY2FCCkycF9UXmVgNvUKICCQSSRJYdrZOEfHmQbc5odmscJXgPtZ4ka+YRmmkpmAk/0vuuAXuRyPmnxLzTxoMwxn+l+S0/aUeGwnAW2B7tDe0c5PlZDcJ7yvtng47l+6Asy68kyFVD1GxmRmY5gr8g7bJNKh5Bi1r9Cgp86MAh4iLC9RYYCcRFymQ3ZBaAIsbtz4u0cja5aTrNhLSc4qwf3ncdmfSSNSStjiXBjSH6brGHgpdzjCX5JB2iG2nbDkp1zltdA6yjIv8HnfY/h9GFcYcZ5tqMJSGD/zCyAI8TMHehqTn4LnkpX4N24VqEde1sFcKagQgS2d/hYzHntkQik1A7jOF4DHvqvDH7FdC5IhkOtG36geO+8jVDQYzs0ig7GJIJuHj2xV2bncE/OQ== rodolfomincholachavez@ingenieros.com"
-              sshKeySecureFile: $(terraform_rsa)
+              #sshKeySecureFile: $(terraform_rsa)
               displayName: installgithubssh
           - task: TerraformTaskV4@4
             inputs:
