@@ -41,7 +41,54 @@ stages:
             inputs:
               knownHostsEntry: "github.com ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAq2A7hRGmdnm9tUDbO9IDSwBK6TbQa+PXYPCPy6rbTrTtw7PHkccKrpp0yVhp5HdEIcKr6pLlVDBfOLX9QUsyCOV0wzfjIJNlGEYsdlLJizHhbn2mUjvSAHQqZETYP81eFzLQNnPHt4EVVUh7VfDESU84KezmD5QlWpXLmvU31/yMf+Se8xhHTvKSCZIFImWwoG6mbUoWf9nzpIoaSjB+weqqUUmpaaasXVal72J+UX2B+2RPW3RcT0eOzQgqlJL3RKrTJvdsjE3JEAvGq3lGHSZXy28G3skua2SmVi/w4yCE6gbODqnTWlg7+wC604ydGXA8VJiS5ap43JXiUFFAaQ=="
               sshPublicKey: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCRfYWbhVQbC0k0Nl0aDY7y5gQQXCF9sLHfDFOuWijkeLTuBWLWlc1Te0mVq2+zQfdD6B6YS8b2Lnn7U4lCAupv2BxNvmaLEPjjgDTeNPhi+rlRC7Sm506zAoIDnrEuRnJJzpSAZEdDcPxU6VRJcSQDfty5IAEbQTZiWrjlJaRGBb+tY3kUIMtOnlDCermK1JOdwcxNp/j9WCO6q2+EuiVX/wlvDCg8SXDzac53sMoLEvsXtISe6epVtupcpMfs9H8Dy81UMSWxGZzNHpakY6eqe+JY2FCCkycF9UXmVgNvUKICCQSSRJYdrZOEfHmQbc5odmscJXgPtZ4ka+YRmmkpmAk/0vuuAXuRyPmnxLzTxoMwxn+l+S0/aUeGwnAW2B7tDe0c5PlZDcJ7yvtng47l+6Asy68kyFVD1GxmRmY5gr8g7bJNKh5Bi1r9Cgp86MAh4iLC9RYYCcRFymQ3ZBaAIsbtz4u0cja5aTrNhLSc4qwf3ncdmfSSNSStjiXBjSH6brGHgpdzjCX5JB2iG2nbDkp1zltdA6yjIv8HnfY/h9GFcYcZ5tqMJSGD/zCyAI8TMHehqTn4LnkpX4N24VqEde1sFcKagQgS2d/hYzHntkQik1A7jOF4DHvqvDH7FdC5IhkOtG36geO+8jVDQYzs0ig7GJIJuHj2xV2bncE/OQ== rodolfomincholachavez@ingenieros.com"
-              sshKeySecureFile: ${terraform_rsa}
+              sshKeySecureFile: "b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAACFwAAAAdzc2gtcn
+                                 NhAAAAAwEAAQAAAgEAkX2Fm4VUGwtJNDZdGg2O8uYEEFwhfbCx3wxTrloo5Hi07gVi1pXN
+                                 U3tJlatvs0H3Q+gemEvG9i55+1OJQgLqb9gcTb5mixD444A03jT4Yvq5UQu0pudOswKCA5
+                                 6xLkZySc6UgGRHQ3D8VOlUSXEkA37cuSABG0E2Ylq45SWkRgW/rWN5FCDLTp5Qwnq5itST
+                                 ncHMTaf4/VgjuqtvhLolV/8JbwwoPElw82nOd7DKCxL7F7SEnunqVbbqXKTH7PR/A8vNVD
+                                 ElsRmczR6WpGOnqnviWNhQgpMnBfVF5lYDb1CiAgkEkkSWHa2ThHx5kG3OaHZrHCV4D7We
+                                 JGvmEZppKZgJP9L7rgF7kcj5p8S808aDMMZ/pfktP2lHhsJwFtge7Q3tHOT5WQ3Ce8r7Z4
+                                 OO5fugLMuvJMhVQ9RsZkZmOYK/IO2yTSoeQYta/QoKfOjAIeIiwvUWGAnERcpkN2QWgCLG
+                                 7c+LtHI2uWk6zYS0nOKsH953HZn0kjUkrY4lwY0h+m6xh4KXc4wl+SQdohtp2w5Kdc5bXQ
+                                 OsoyL/B532P4fRhXGHGebajCUhg/8wsgCPEzB3oak5+C55KV+DduFahHXtbBXCmoEIEtnf
+                                 4WMx57ZEIpNQO4zheAx76rwx+xXQuSIZDrRt+oHjvvI1Q0GM7NIoOxiSCbh49sVdm53BPz
+                                 kAAAdgJsNApSbDQKUAAAAHc3NoLXJzYQAAAgEAkX2Fm4VUGwtJNDZdGg2O8uYEEFwhfbCx
+                                 3wxTrloo5Hi07gVi1pXNU3tJlatvs0H3Q+gemEvG9i55+1OJQgLqb9gcTb5mixD444A03j
+                                 T4Yvq5UQu0pudOswKCA56xLkZySc6UgGRHQ3D8VOlUSXEkA37cuSABG0E2Ylq45SWkRgW/
+                                 rWN5FCDLTp5Qwnq5itSTncHMTaf4/VgjuqtvhLolV/8JbwwoPElw82nOd7DKCxL7F7SEnu
+                                 nqVbbqXKTH7PR/A8vNVDElsRmczR6WpGOnqnviWNhQgpMnBfVF5lYDb1CiAgkEkkSWHa2T
+                                 hHx5kG3OaHZrHCV4D7WeJGvmEZppKZgJP9L7rgF7kcj5p8S808aDMMZ/pfktP2lHhsJwFt
+                                 ge7Q3tHOT5WQ3Ce8r7Z4OO5fugLMuvJMhVQ9RsZkZmOYK/IO2yTSoeQYta/QoKfOjAIeIi
+                                 wvUWGAnERcpkN2QWgCLG7c+LtHI2uWk6zYS0nOKsH953HZn0kjUkrY4lwY0h+m6xh4KXc4
+                                 wl+SQdohtp2w5Kdc5bXQOsoyL/B532P4fRhXGHGebajCUhg/8wsgCPEzB3oak5+C55KV+D
+                                 duFahHXtbBXCmoEIEtnf4WMx57ZEIpNQO4zheAx76rwx+xXQuSIZDrRt+oHjvvI1Q0GM7N
+                                 IoOxiSCbh49sVdm53BPzkAAAADAQABAAACAEIGwxG3SloTnx8w5MOkD5GwTXvXM+PEwpRF
+                                 Fdz0UcaN+R5kF1znEw2lz9k6ujCR6VNKDkhza1Hh+b3TRWFNzXMAkqe9lu/ZvfoQ/u0xAO
+                                 B6hIuBUnTEWHTo2HQoGqSzl75jIAW8fJLgvcMTOQsza3Kiqizhl171E2dDYNGtaYXVqg1Y
+                                 LWSzFVESi/gWlgmpO2zGvJ8pcdgXne9jSfLkP3pV5cQdskzZz4bIJ8kt1CN+c7FoXR95bL
+                                 2Fi4qLxaeFtfbVENP6ke5zfzOfhCIKj9bQ7gH/+VmoynbrvtMvidOEtmFSEl8G/VFuqpnf
+                                 m5OuIZRK2YUmg/wtIh3JUdn/R2XHzHYIkQA/8JtL9RUrr8hjeaVnnP7rG2rEw4ZJ8Zg7KR
+                                 SGRSuNZuaIrWNM/4WLPluuL6XtvMbieQTMTx7En32Mcycc9jyDgQaZT0ICsA6BIeC31fWi
+                                 V1QNEGbZT/dWelust7lqfKjspvfgqe5Ox9G08YNcmeD8wl9YUa+tQ3VQR/+v/ih+MwpsB0
+                                 1YjievtCPJ1qIreH3iyXaZpI7aiIUoppnSNNJk6RBVFFqgd9OGWff7HJ68ARwM0XXgHsIT
+                                 UzKV9nle/74NUKoxyPAU6UtOfj2kyN5z9mX67h7OgZTrj5hnm0m/dyE97THE83jrn6tM6i
+                                 bjdv/Ukw34xPwY7kLZAAABAQCALXqN8Yy/2JeXSWZ8FzFnQtCZm33Nx1Esn/Ad/wTy8JAR
+                                 GxCaoYMLhvSxXWVDCsJZKjJfhm/clFZ1cCtVvsgUnZNwBHkYoF2W5+Xui2Spf7cxStHD7D
+                                 A5ppiWc0NrFi138A5thDm9Dkdp2wuO3awcBrGUe0EJcFUNR+q4qxUbTTvstHPvAzzpEmCk
+                                 bk4jpbcdDF+WP03s58o4FvwOIZqZxbrjrKBGANMNjHkCYUQlOgIhUWpK7pIOpI+sVPG5NZ
+                                 EVf2/8gFJ31PSb14Y5OTtI3Y7XReXQDGSAl9XBGDeCL0aSVIM46wFlIC/VgO2DKwsFforo
+                                 FxL33hp2CRx4O+vrAAABAQDBD42tFPc3J64vznuKerFf08dJfAVlFgTNuhqtutN/wP0iJg
+                                 TMVuUBjEXfHImsGDc97vKTEUIXBQ8uRo2jyBI598ToAARVMB40pKHUCA2we9Yqrce5y6ze
+                                 Tx30VwXfSpoBxRceaBrgAfJWrP4FH4fGQt/2AGqu8coaJJ41jm62CKC0z9gpvZZ7iFuk6w
+                                 jh3h4CQoDQVxext2KIHFDHzx+JJ5wyGkBSFlbFcizKw13uMR4ggAb91SPVSSqETJ2Ie5SI
+                                 FIaqdeOP5sGN3ttNxpo8B6rRCtRiFutS/SMqbLbuWCfSSb5YshxTf7lYgkA6JVas1ClPma
+                                 XubgisE7LLn0gfAAABAQDA69bo6vWDPaMSnXxoNqJhtbjn+6KTEnqPCOlW9+8kOsDGhxdi
+                                 sDnDJzeAdf1oJ3PYQqgFmn0mRVl1uTq1rBiMjAqUFb0IhtTn1WZ4SRuZApsPzApt+tB9/5
+                                 AKDNfyXulJhMFg2Vc23aY/R4geuzV30/YFguzFa2CayxuGoXVFmy8jEJdCt4g0UkWVIixy
+                                 PEMzkdReleVErIIdXPgE7jumFDDR0EblmBxk3FNBa5b72sLWdwL31BrcSB/lG3Vup1oH1R
+                                 SKVAWWOvRZzOp9Yllf6zaTPHDRRHKUyufBauTX/HeQvxGarjXl9vO68okE0T4SAECyzHbD
+                                 dYTVE2Z0XG2nAAAAJHJvZG9sZm9taW5jaG9sYWNoYXZlekBpbmdlbmllcm9zLmNvbQECAw
+                                 QFBg=="
               displayName: installgithubssh
           - task: TerraformTaskV4@4
             inputs:
