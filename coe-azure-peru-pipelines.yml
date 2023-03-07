@@ -3,17 +3,78 @@
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
 
-trigger:
-- main
+trigger: none
+#- main
 
 pool:
   vmImage: ubuntu-latest
 
-steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
+variables:
+- name: bkresourcegroup
+  value: 'rg-latam-modernization-peru-westus-001'
+- name: bkstorage
+  value: 'terraformperubackend'
+- name: bkcontainer
+  value: 'tfstate'
+- name: bkstrgkey
+  value: 'pipeline.terraform.tfstate'
 
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
+stages:
+  - stage: tfinit
+    jobs:
+      - job: init
+        continueOnError: false
+        steps:
+          - task: TerraformInstaller@0
+            displayName: tfinstall
+            inputs:
+              terraformVersion: 'latest'
+          - task: TerraformTaskV4@4
+            inputs:
+              provider: 'azurerm'
+              command: 'init'
+              backendServiceArm: 'Coeperuterraformservicetestconnection'
+              backendAzureRmResourceGroupName: 'rg-latam-modernization-peru-westus-001'
+              backendAzureRmStorageAccountName: 'terraformperubackend'
+              backendAzureRmContainerName: 'tfstate'
+              backendAzureRmKey: 'pipeline.terraform.tfstate'
+          - task: TerraformTaskV4@4
+            displayName: validate
+            inputs:
+              provider: 'azurerm'
+              command: 'validate'
+  - stage: tfdeploy
+    condition: succeeded('tfinit')
+    dependsOn: tfinit
+    jobs:
+      - job: apply
+        steps:
+          - task: TerraformInstaller@0
+            displayName: tfinstall
+            inputs:
+              terraformVersion: 'latest'
+          - task: TerraformTaskV4@4
+            inputs:
+              provider: 'azurerm'
+              command: 'init'
+              backendServiceArm: 'Coeperuterraformservicetestconnection'
+              backendAzureRmResourceGroupName: 'rg-latam-modernization-peru-westus-001'
+              backendAzureRmStorageAccountName: 'terraformperubackend'
+              backendAzureRmContainerName: 'tfstate'
+              backendAzureRmKey: 'pipeline.terraform.tfstate'
+          - task: TerraformTaskV4@4
+            displayName: plan
+            inputs:
+              provider: 'azurerm'
+              command: 'plan'
+              environmentServiceNameAzureRM: 'Coeperuterraformservicetestconnection'
+          - task: TerraformTaskV4@4
+            displayName: apply
+            inputs:
+              provider: 'azurerm'
+              command: 'apply'
+              environmentServiceNameAzureRM: 'Coeperuterraformservicetestconnection'
+        
+
+
+
